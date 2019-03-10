@@ -12,7 +12,7 @@
   <br />
   <br />
   <%= f.label :genre, 'Genre Name:' %><br>
-  <%= f.collection_select :genre_id, Genre.all, :id, :genre_name %>
+  <%= f.collection_select :genre_id, Genre.all, :id, :name %>
   <br />
   <br />
   <%= f.label :notes %><br>

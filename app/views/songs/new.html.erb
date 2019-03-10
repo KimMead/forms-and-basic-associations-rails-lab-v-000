@@ -7,12 +7,5 @@
   </div>
   <br />
 
-
-
-  <div class="field">
-   <%= f.label :genre_id, 'Song Genre:' %><br>
-   <%= f.collection_radio_selection :genre_id, @genres, :id, :name %>
-  </div>
-
   <%= f.submit %>
 <% end %>

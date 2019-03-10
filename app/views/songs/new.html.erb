@@ -1,11 +1,12 @@
 <h1>Create a Song</h1>
 
 <%= form_for @song  do |f| %>
-  <%= f.label :title %>
+  <div class="field">
+  <%= f.label :title, 'Song Title' %><br>
   <%= f.text_field :title %>
   <br />
 
-<%= form_for @artist  do |f| %>
+
   <%= f.label :name %>
   <%= f.text_field :name %>
   <br />

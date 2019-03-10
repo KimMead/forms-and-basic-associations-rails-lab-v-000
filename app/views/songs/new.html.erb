@@ -7,5 +7,12 @@
   </div>
   <br />
 
+<%= form_for @song  do |f| %>
+  <div class="field">
+  <%= f.label :title, 'Song Title:' %><br>
+  <%= f.text_field :title %>
+  </div>
+  <br />
+
   <%= f.submit %>
 <% end %>

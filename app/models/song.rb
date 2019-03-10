@@ -13,12 +13,12 @@ class Song < ActiveRecord::Base
   end
 
   def genre_name
-    self.genre.name 
-  end 
+    self.genre.name
+  end
 
   def genre_name=(genre)
     self.genre = Genre.find_or_create_by(name: genre)
-  end 
+  end
 
 
 end
